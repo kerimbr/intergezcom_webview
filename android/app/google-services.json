@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "162114690552",
+    "project_id": "intergezcom-4ca55",
+    "storage_bucket": "intergezcom-4ca55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:162114690552:android:7c33df3c79c4911d5a8a0d",
+        "android_client_info": {
+          "package_name": "com.kerimbr.intergez_webview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "162114690552-m0idd630h3tntuke4oedvv1db1fn2hc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC05zW9zD43EIbB098TltBMxoo7lpKa-i8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "162114690552-m0idd630h3tntuke4oedvv1db1fn2hc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
