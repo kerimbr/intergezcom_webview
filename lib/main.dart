@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:intergez_webview/splash_screen.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 
+
+
+
 void main() async{
 
   WidgetsFlutterBinding.ensureInitialized();
@@ -13,10 +16,11 @@ void main() async{
       iOSSettings: {
         OSiOSSettings.autoPrompt: false,
         OSiOSSettings.inAppLaunchUrl: false
-      }
+      },
+
   );
   OneSignal.shared.setInFocusDisplayType(OSNotificationDisplayType.notification);
-  await OneSignal.shared.promptUserForPushNotificationPermission(fallbackToSettings: true);
+  OneSignal.shared.promptUserForPushNotificationPermission(fallbackToSettings: true);
 
 
 
@@ -25,9 +29,17 @@ void main() async{
 
 
 
+
 class InterGezApp extends StatelessWidget {
+
+
+  InterGezApp();
+
+
+
   @override
   Widget build(BuildContext context) {
+
 
 
     return RestartWidget(

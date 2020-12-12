@@ -9,6 +9,7 @@ import 'package:intergez_webview/no_network.dart';
 
 
 class SplassScreen extends StatefulWidget {
+
   @override
   _SplassScreenState createState() => _SplassScreenState();
 }
@@ -74,11 +75,12 @@ class _SplassScreenState extends State<SplassScreen> {
                     mainAxisSize: MainAxisSize.min,
                     children: [
                       Container(
-                        width: 120,
-                        height: 80,
+                        width: 150,
+                        height: 130,
+                        //color: Colors.orangeAccent,
                         child: Image.asset(
                           "assets/ig_logo.png",
-                          fit: BoxFit.fill,
+                          fit: BoxFit.contain,
                         ),
                       ),
                       SizedBox(height: 80),
@@ -110,11 +112,11 @@ class _SplassScreenState extends State<SplassScreen> {
                         bottom: 30
                     ),
                     child: Container(
-                      width: 110,
-                      height: 40,
+                      width: 160,
+                      height: 50,
                       child: Image.asset(
                         "assets/intergez_logo.png",
-                        fit: BoxFit.fill,
+                        fit: BoxFit.contain,
                       ),
                     ),
                   ),
@@ -128,7 +130,7 @@ class _SplassScreenState extends State<SplassScreen> {
   }
 
   Future<bool> _check() async{
-    await Future.delayed(Duration(seconds: 3));
+    await Future.delayed(Duration(seconds: 2));
     return isOnline;
   }
 
